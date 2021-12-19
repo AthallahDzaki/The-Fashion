@@ -33,8 +33,6 @@ const item = {
             itemPrice: "$45.00",
             itemRealPrice: "$70.00",
             itemDiscount: "40% Off"
-        }, { // 5 | 6
-            itemName : ""
         }
     ]
 }
@@ -59,10 +57,14 @@ for(x in item) {
                 <p>Price : <strong>${itemPrice}</strong> <a style="text-decoration: line-through;">${itemRealPrice}</a>
                     <a style="color:green">${itemDiscount}</a>
                 </p>
-                <a class="btn btn-info d-block mt-auto" onclick="ShowProduct(0)">Info</a>
+                <a class="btn btn-info d-block mt-auto" onclick="Buy('${itemName}', '${itemPrice}', '${itemRealPrice}', '${itemDiscount}')">Buy</a>
             </div>
         </div>`
         document.getElementById(x).appendChild(card);
-
     }
+}
+
+function Buy(name, price, realprice, discount)
+{
+    window.open(`https://web.whatsapp.com/send?phone=6281332504194?&text=Product Name:%20${name}%Real:%20${price}%0AReal Price:%20${realprice}%0ADiscount:%20${discount}%0A%0AThanks%20BRO!`)
 }
