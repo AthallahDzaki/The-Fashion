@@ -66,5 +66,5 @@ for(x in item) {
 
 function Buy(name, price, realprice, discount)
 {
-    window.open(`https://web.whatsapp.com/send?phone=6281332504194?&text=Product Name:%20${name}%20Real Price:%20${price}%0AReal Price:%20${realprice}%0ADiscount:%20${discount}%0A%0AThanks%20BRO!`)
+    window.open(`https://wa.me/send?phone=6281332504194?&text=Product Name:%20${name}%20Real Price:%20${price}%0AReal Price:%20${realprice}%0ADiscount:%20${discount}%0A%0AThanks%20BRO!`)
 }
