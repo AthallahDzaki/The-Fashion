@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
 });
 
 $(document).ready(function() {
-    alert("Ini Website Belom Jadi\n Product Masih Kurang");
+    alert("Ini Website Belom Jadi\nProduct Masih Kurang");
 })
 
 document.getElementById("DarkModeButton").addEventListener("change", (event) => {
