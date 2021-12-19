@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
 });
 
 $(document).ready(function() {
-    alert("Ini Website Belom Jadi\n WA Intergrate Belum Ada, Product Masih Kurang");
+    alert("Ini Website Belom Jadi\n Product Masih Kurang");
 })
 
 document.getElementById("DarkModeButton").addEventListener("change", (event) => {
