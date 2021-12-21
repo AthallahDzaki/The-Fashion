@@ -1,0 +1,17 @@
+Author       : Athallah Dzaki.
+Template Name: The Fashion - eCommerce Bootstrap 5 HTML
+Version      : 1.0
+
+
+Q: How to set PhoneNumber
+A: Goto Console and type setPhone("62123456789"); 
+   or change on item.js
+
+Q: This theme is free?
+A: Yes
+
+Q: License?
+A: GNU GPL 3
+
+
+Note : setPhone only set on Cookies, if you want permanent change use item.js instead

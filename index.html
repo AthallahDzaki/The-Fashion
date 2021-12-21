@@ -8,12 +8,15 @@
     <title>Home - The Fashion</title>
     <link href="/index.css" rel='stylesheet' />
     <link href="/assets/css/bootstrap.min.css" rel='stylesheet' />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
-
 <body>
     <!-- This Is Navbar -->
+    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+        <strong>ALERT!</strong> This page is only for study.
+        <button type="button" class="btn-close btn-dark" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <div id="mainpage">
         <section id="navbarSection" class="container-md">
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -58,7 +61,7 @@
                             aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" data-bs-interval="5000">
                             <img src="https://bestwebcreator.com/shopwise/demo/assets/images/banner1.jpg"
                                 alt="responsive image">
                             <div class="carousel-caption d-none d-md-block">
@@ -69,7 +72,7 @@
                                 <a class="btn btn-opacity" href="#women">🛒 Shop now</a>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="5000">
                             <img src="https://bestwebcreator.com/shopwise/demo/assets/images/banner2.jpg"
                                 alt="responsive image">
                             <div class="carousel-caption d-none d-md-block">
@@ -80,7 +83,7 @@
                                 <a class="btn btn-opacity" href="#man">🛒 Shop now</a>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="5000">
                             <img src="https://bestwebcreator.com/shopwise/demo/assets/images/banner3.jpg"
                                 alt="responsive image">
                             <div class="carousel-caption d-none d-md-block">
@@ -132,58 +135,15 @@
                     <div class="row justify-content-center">
                         <div class="col-md-6">
                             <div class="heading_s1 text-center">
-                                <h2>Woman Products</h2>
+                                <h2>Women Products</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <section id="#women">
+            <section>
                 <div class="container pt-5">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100 shadow">
-                                <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Individual</h5>
-                                    <p class="card-text">The perfect plan for just you. Get all the fresh fruit and
-                                        vegatables you need without waste.</p>
-                                    <a href="#" class="btn btn-success">Buy</a>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow">
-                                <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Family Plan</h5>
-                                    <p class="card-text">Bring the freshest fruits and vegatbles to your whole family.
-                                    </p>
-                                    <a href="#" class="btn btn-success">Buy</a>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow">
-                                <img src="https://bestwebcreator.com/shopwise/demo/assets/images/product_img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Army Plan</h5>
-                                    <p class="card-text">You have a really big family or a whole army to feed? This is
-                                        the
-                                        plan for you!</p>
-                                    <a href="#" class="btn btn-success">Buy</a>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted"></small>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row row-cols-1 row-cols-md-3 gap-4" id="WomenProduct">
                     </div>
                 </div>
             </section>
@@ -191,7 +151,7 @@
         <br />
         <br />
         <div>
-            <div class="section small_pt pb_70">
+            <div class="section small_pt pb_70" id="man">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6">
@@ -202,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <section id="#Man">
+            <section>
                 <div class="container pt-5">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
@@ -255,7 +215,7 @@
         <br />
         <br />
         <div>
-            <div class="section small_pt pb_70">
+            <div class="section small_pt pb_70" id="kids">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6">
@@ -266,7 +226,7 @@
                     </div>
                 </div>
             </div>
-            <section id="#kids">
+            <section>
                 <div class="container pt-5">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
@@ -317,7 +277,7 @@
             </section>
         </div>
         <!-- Dark Mode Enable -->
-        <div class="position-fixed py-2 px-3 bg-dark text-white rounded-pill" style="bottom:1rem;right:1rem;">
+        <div class="position-fixed py-2 px-3 bg-dark text-white rounded-pill" style="bottom:1px;right:1px;">
             <label id="darkMode">
                 <input type="checkbox" id="DarkModeButton" checked>
                 <div class="planet">
@@ -351,19 +311,12 @@
             </label>
         </div>
         <!-- Modal Are Separate From Index -->
-        <div id="ProductInfo" class="modal" tabindex="-1">
-            <div class="modal-dialog">
+        <div class="modal fade subscribe_popup show" id="onload-popup" tabindex="-1" role="dialog" aria-modal="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ProductName"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
                     <div class="modal-body">
-                        <p>Modal body text goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        p
+                        <a href="/iteminfo.html" class="popup-ajax">Titid</a>
                     </div>
                 </div>
             </div>
@@ -371,6 +324,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/magnific-popup.js"></script>
     <script src="assets/js/system.js"></script>
     <script src="assets/js/item.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
