@@ -5,7 +5,8 @@ $(document).ready(function() {
 })
 
 $("#contact").submit(function(e) {
-    e.preventDefault()
+    e.preventDefault();
+    CheckEasterEgg();
     if($("#human").val() == parseInt(solve.split(" + ")[0]) + parseInt(solve.split(" + ")[1]))
     {
         alert("Thanks For Your Feed Back");

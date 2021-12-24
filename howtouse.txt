@@ -13,5 +13,7 @@ A: Yes
 Q: License?
 A: GNU GPL 3
 
+Q: Something Secret At Contact?
+A: Yep, Find It :)
 
 Note : setPhone only set on Cookies, if you want permanent change use item.js instead
