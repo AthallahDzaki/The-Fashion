@@ -5,7 +5,6 @@ Version      : 1.0
 */
 
 window.addEventListener('resize', function (event) {
-    console.log("P");
     if (document.documentElement.clientWidth < 575) {
         $("#navbarSection").removeAttr("class")
     } else {

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - The Fashion</title>
+  <link href="/index.css" rel='stylesheet' />
+  <link href="/assets/css/bootstrap.min.css" rel='stylesheet' />
+  <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- This Is Navbar -->
+  <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+    <strong>ALERT!</strong> This page is only for study.
+    <button type="button" class="btn-close btn-dark" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div id="mainpage">
+    <section id="navbarSection" class="container-md">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="index.html">The Fashion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index.html#women">Women</a></li>
+                  <li><a class="dropdown-item" href="index.html#man">Man</a></li>
+                  <li><a class="dropdown-item" href="index.html#kids">Kids</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Contact US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="d-flex align-items-center justify-content-center">
+        <legend class="h1 text-center">Contact Us</legend>
+        <div class="container wrapper">
+          <form class="form-horizontal" role="form" id="contact">
+
+            <div class="form-group">
+              <label class="control-label" for="name"><span class="required">*</span>Name:</label>
+              <div class="col-sm-10 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="name" type="text" required class="form-control" id="name" placeholder="Your full name"
+                    title="name">
+                </div>
+              </div>
+            </div>
+
+            <!--Email Address-->
+
+            <div class="form-group">
+              <label class="control-label" for="Email"><span class="required">*</span>Email Address:</label>
+              <div class="col-sm-10 inputGroupContainer">
+                <div class="input-group"> <span class="input-group-addon"><i
+                      class="glyphicon glyphicon-envelope"></i></span>
+                  <input name="Email" type="email" required class="form-control" id="email"
+                    placeholder="your@email.com" title="Email">
+                </div>
+              </div>
+            </div>
+
+            <!--Phone Optional-->
+            <div class="form-group">
+              <label class="control-label" for="Phone">Phone:</label>
+              <div class="col-sm-10 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input name="Phone" type="email" class="form-control" id="phone" placeholder="Optional"
+                    title="Phone no."></span>
+                </div>
+              </div>
+            </div>
+            <!--Text Area-->
+            <div class="form-group">
+              <label class="control-label" for="message"><span class="required">*</span>Message:</label>
+              <div class="col-sm-10 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+
+                  <textarea class="form-control" name="message" rows="4"
+                    placeholder="Type your message here."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Human validation-->
+            <div class="form-group">
+              <label for="human" class="control-label"><span class="required">*</span> Human Test:</label>
+              <div class="col-sm-10 inputGroupContainer">
+                <h3 class="human"></h3>
+                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                <span class="required small"></span>
+              </div>
+            </div>
+
+            <!--SEND Button-->
+
+            <div class="form-group">
+              <label class="control-label"></label>
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span>
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Dark Mode Enable -->
+    <div class="position-fixed py-2 px-3 bg-dark text-white rounded-pill" style="bottom:1px;right:1px;">
+      <label id="darkMode">
+        <input type="checkbox" id="DarkModeButton" checked>
+        <div class="planet">
+        </div>
+        <div class="elements">
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+          <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="200" />
+          </svg>
+        </div>
+      </label>
+    </div>
+    <div>
+      <br />
+      <br />
+      <footer class="text-center text-lg-start bg-light text-muted container">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="https://github.com/AthallahDzaki">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fa fa-shopping-cart me-3"></i>The Fashion
+                </h6>
+                <p>
+                  The fashion is E-Commerce With Simple Bootstrap 5 Intergrate.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="https://sampindo.id" target="_blank" class="text-reset">SAMPINDO</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Contact Us</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fa fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fa fa-envelope me-3"></i>
+                  admin@sampindo.id
+                </p>
+                <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fa fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="https://sampindo.id/">sampindo.id</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/system.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

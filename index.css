@@ -398,29 +398,30 @@ html body label .elements svg circle {
     transition: fill 400ms ease;
 }
 html body label .elements svg:first-child {
-    transform: translate(1.8em, 0.35em);
+    transform: translate(1.5em, 0.35em);
 }
 html body label .elements svg:nth-child(2) {
-    transform: translate(2.8em, 0.7em);
+    transform: translate(2.5em, 0.7em);
 }
 html body label .elements svg:nth-child(3) {
-    transform: translate(3.2em, 1.8em);
+    transform: translate(3.0em, 1.8em);
 }
 html body label .elements svg:nth-child(4) {
-    transform: translate(2.8em, 2.8em);
+    transform: translate(2.5em, 2.8em);
 }
 html body label .elements svg:nth-child(5) {
-    transform: translate(1.8em, 3.2em);
+    transform: translate(1.5em, 3.2em);
 }
 html body label .elements svg:nth-child(6) {
-    transform: translate(0.7em, 2.8em);
+    transform: translate(0.5em, 2.8em);
 }
 html body label .elements svg:nth-child(7) {
-    transform: translate(0.35em, 1.8em);
+    transform: translate(0.33em, 1.8em);
 }
 html body label .elements svg:nth-child(8) {
-    transform: translate(0.7em, 0.7em);
+    transform: translate(0.5em, 0.7em);
 }
+
 html.bg-dark body {
     background-color: var(--bg-color);
 }

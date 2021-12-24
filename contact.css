@@ -1,0 +1,54 @@
+.container legend {
+	margin-top: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #EB771F;
+}
+
+body {
+	background-color: #e7e7e7;
+}
+
+.bg1 {
+  background-color: #E8FBDA;
+}
+
+.navbar-header .navbar-brand .img-responsive {
+	width: 100px;
+	height: auto;
+	margin-left: 25px;
+}
+
+.container .navbar-header .navbar-brand {
+	height: 90px;
+}
+
+.container.nav #defaultNavbar1 .nav.navbar-nav.navbar-right {
+	margin-top: 25px;
+}
+
+nav .container {
+	background-color: #262626;
+}
+
+div.copyright {
+	color: #f2f2f2;
+}
+
+footer {
+	height: 50px;
+	width: 100%;
+	align-content: center;
+	font-size: 10px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	padding-top: 20px;
+	padding-bottom: auto;
+	background-color: #2F2F2F;
+}
+
+.form-horizontal {
+	width: 85%;
+	margin: 0 auto 0 auto;
+	padding: 10px;
+}
+	
